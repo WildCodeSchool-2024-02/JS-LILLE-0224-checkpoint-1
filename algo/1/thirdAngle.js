@@ -6,12 +6,15 @@ thirdAngle(90, 30) doit retourner 60
 thirdAngle(20, 80) doit retourner 80
 */
 
-let triangle = 180
-function thirdAngle(triangle, a, b) {
+function thirdAngle(a, b) {
   // Your code here !
-  return triangle - (a + b);
+  const calculKnowAngle = (a + b);
+  const calculThridAngle = 180 - calculKnowAngle;
+  return calculThridAngle;
+
 }
-console.log(thirdAngle(triangle, 90, 30));
+console.log(thirdAngle(90, 30));
+console.log(thirdAngle(20, 30));
 module.exports = thirdAngle;
 
 
