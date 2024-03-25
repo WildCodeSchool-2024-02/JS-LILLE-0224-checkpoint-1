@@ -18,15 +18,17 @@ for (let i = 0; i < avatarOrigin.length; i++) {
     })
 };
 
-// Changement couleur et nom
+// Changement couleur et nom 
+// la boucle sert à changer la couleur de la description et du footer en même temps
 
 const devName = document.getElementById('firstname')
 const nameBTN = document.getElementById('changeNameStyleBtn')
-const backColorSection = document.getElementsByClassName('pinkBg')
+const newBgColor = document.getElementsByClassName('pinkBg')
 nameBTN.addEventListener('click', function (){
     let newName = prompt('Entrez votre nom SVP')
     devName.innerHTML = newName
     devName.style.color = "white"
-    backColorSection.style.backgroundColor = "#750ff7";
-
+    for (let i = 0; i < newBgColor.length; i++) {
+        newBgColor[i].style.backgroundColor = "#750ff7";
+    }
 })
