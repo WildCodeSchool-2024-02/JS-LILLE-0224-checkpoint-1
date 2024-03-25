@@ -4,12 +4,13 @@ lui-même contenant deux sous-tableaux :
 - Le premier contient uniquement des femmes adultes
 - Le second ne contient que des hommes adultes
 (Étant donné qu'une personne est un adulte si elle a 18 ans ou plus)
+*/
 
 const persons = [
   { name: 'Mary Poppins', age: 32, sex: 'female' },
   { name: 'Tony Stark', age: 36, sex: 'male' },
   { name: 'John Doe', age: 12, sex: 'male' },
-  { name: 'Jane Doe', age: 6, sex: 'female' },
+  { name: 'Jane Doe', age: 6, sex: 'female'  },
   { name: 'Maggie Simpson', age: 2, sex: 'female' },
   { name: 'Leonardo', age: 92, sex: 'male' },
   { name: 'Carla Moreau', age: 24, sex: 'female' },
@@ -23,10 +24,16 @@ const persons = [
   { name: 'Penelope Cruz', age: 47, sex: 'female' },
 ];
 
-*/
-
 function findAdults(persons) {
   // Your code here !
+  const adults = persons.filter( people => people.age >= 18);
+  const women = adults.filter ( people => people.sex === "female");
+  const men = adults.filter ( people => people.sex === "male");
+  return [women, men];
 }
+const [womenAdults, menAdults] =  findAdults(persons);
+console.log("Adults females =", womenAdults );
+console.log("Adults male =", menAdults);
+
 
 module.exports = findAdults;
