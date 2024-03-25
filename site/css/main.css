@@ -62,6 +62,10 @@ button:focus {
 .desktop {
   display: none;
 }
+#op1,
+#op2 {
+  opacity: 0.5;
+}
 
 @media screen and (min-width: 700px) {
   header nav {
@@ -80,5 +84,9 @@ button:focus {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
+  }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
