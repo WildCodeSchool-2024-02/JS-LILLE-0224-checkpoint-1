@@ -97,7 +97,6 @@ p {
 }
 
 .box {
-  width: 25%;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
   margin: calc(var(--gutter) * 1.25);
@@ -128,6 +127,15 @@ p {
   opacity: 0.5;
 }
 
+.projects {
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 700px) {
     nav {
       display: flex;
@@ -152,5 +160,16 @@ p {
 
     .column {
       width: 50%;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .box {
+      width: 25%;
     }
 }
