@@ -118,9 +118,29 @@ p {
   align-items: center;
 }
 
+#modifyTextColor {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+  border-radius: 2px;
+  border: solid #FFF 1px;
+  padding: 0.63rem;
+}
+
 .skills-container {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.skills button {
+  background-color: var(--lightWildColor);
+  color: #ffffff;
+  border-radius: 2px;
+  border: none;
+  padding: 0.63rem;
+}
+
+#inputDevToolsBack {
+  padding: 0.5rem;
 }
 
 .disabled {
@@ -134,6 +154,11 @@ p {
 .projects-container {
   display: flex;
   flex-direction: column;
+}
+
+#modifyTextColor:hover, 
+.skills button:hover {
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 700px) {

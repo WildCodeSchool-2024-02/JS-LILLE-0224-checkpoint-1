@@ -28,15 +28,17 @@ btnModifyTextColor.addEventListener("click", () => {
     for (let link of navLink) {
         link.style.color = newColor
     }
+    btnModifyFrontDevTools.style.backgroundColor = newColor
+    btnAddDevToolsBack.style.backgroundColor = newColor
     descriptionName.innerHTML = prompt("What's your name ?")
     descriptionName.style.color = "white"
 })
 
 btnModifyFrontDevTools.addEventListener("click", () => {
-    frontEndDevToolsList.innerHTML = `<li>VsCode</li><li>Github</li><li>Terminal</li>`
+    frontEndDevToolsList.innerHTML = `<li>VScode</li><li>Github</li><li>Terminal</li>`
 })
 
-let newDevToolsBack = `<li>VsCode</li>`
+let newDevToolsBack = `<li>VScode</li>`
 
 btnAddDevToolsBack.addEventListener("click", () => {
     newDevToolsBack = newDevToolsBack + `<li>${inputDevToolsBack.value}</li>`
