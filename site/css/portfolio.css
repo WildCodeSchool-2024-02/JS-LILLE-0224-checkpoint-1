@@ -134,4 +134,14 @@ p {
     .desktop {
       display: block;
     }
+
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row-reverse;
+    }
+
+    .column {
+      width: 50%;
+    }
 }
