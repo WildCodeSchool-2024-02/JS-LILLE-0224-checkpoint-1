@@ -13,10 +13,12 @@ let nameUser = document.createElement("span");
 
 const btn = document.createElement("button");
 btn.innerHTML = "Modifier le nom et la couleur";
-console.log(btn);
 let zone = document.querySelector(".description");
 zone.appendChild(btn);
-console.log(zone);
+let nameToBeReplaced = document.getElementById("firstname");
+
 btn.addEventListener("click", function () {
-  let askName = prompt(`What's your name ?`);
+  let nameUser = prompt(`What's your name ?`);
+  nameToBeReplaced.innerHTML = nameUser;
+  document.getElementById("firstname").style.color = "white";
 });
