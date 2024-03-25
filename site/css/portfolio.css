@@ -67,7 +67,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -107,4 +107,36 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.desktop {
+  display: none;
+}
+#op1,
+#op2 {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 700px) {
+  header nav {
+    justify-content: space-between;
+  }
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .desktop {
+    display: flex;
+    justify-content: center;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
