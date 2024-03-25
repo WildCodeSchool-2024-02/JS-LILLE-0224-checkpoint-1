@@ -10,6 +10,5 @@ function thirdAngle(a, b) {
   let totalAngle = 180 ;
   return totalAngle - a -b ; 
 }
-}
 
 module.exports = thirdAngle;

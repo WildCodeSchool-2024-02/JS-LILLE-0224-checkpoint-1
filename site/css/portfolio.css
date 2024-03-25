@@ -15,10 +15,15 @@ img {
   max-width: 100%;
 }
 
+
+
 h1 {
   font-size: calc(var(--gutter) * 1.5);
 }
-
+h2 {
+  display: flex;
+  justify-content: center;
+} 
 p {
   padding: 0 var(--gutter);
 }
@@ -92,10 +97,12 @@ p {
   color: var(--lightWildColor);
 }
 
-.projects a {
+.workingA {
   color: var(--purple);
 }
-
+.disabled {
+  color: var(--purpleDisabled);
+}
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -107,4 +114,52 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width : 700px) {
+  .menu {    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+  }
+
+  .introFull {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction:row-reverse ;
+    justify-content: center;
+ ;
+  }
+
+  .projectList {
+    display: flex;
+    flex-direction: row;
+}
+
+.titleProjects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+}
+
+@media screen and (max-width : 699px) {
+  .desktopSVG {display: none;} 
+  
+  .skills {
+    display: flex;
+    flex-direction:column-reverse ;
+    justify-content: center;
+  }
+  
+  
 }

@@ -22,8 +22,9 @@ const persons = [
   { name: 'Millie Bobby Brown', age: 15, sex: 'female' },
   { name: 'Penelope Cruz', age: 47, sex: 'female' },
 ];
-
 */
+
+
 
 function findAdults(persons) {
   const adultArr = persons.filter(person => person.age >= 18);
