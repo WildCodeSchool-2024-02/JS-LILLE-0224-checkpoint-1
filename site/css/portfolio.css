@@ -70,6 +70,7 @@ p {
 
 .skills {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
