@@ -20,11 +20,13 @@ for (let i = 0; i < avatarOrigin.length; i++) {
 
 // Changement couleur et nom
 
-const devName = document
+const devName = document.getElementById('firstname')
 const nameBTN = document.getElementById('changeNameStyleBtn')
+const backColorSection = document.getElementsByClassName('pinkBg')
 nameBTN.addEventListener('click', function (){
     let newName = prompt('Entrez votre nom SVP')
-    
-
+    devName.innerHTML = newName
+    devName.style.color = "white"
+    backColorSection.style.backgroundColor = "#750ff7";
 
 })
