@@ -114,4 +114,11 @@ p {
       display: flex;
       justify-content: space-between;
     }
+
+    .banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 }
