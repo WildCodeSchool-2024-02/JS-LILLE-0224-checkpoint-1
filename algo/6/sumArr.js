@@ -9,8 +9,16 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) should return ["4", "11", "
 sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "12", "5", "5"]
 */
 
-function sumArr(arrayA, arrayB) {
-  // Your code here !
-}
+function sumArr(arrayA, arrayB){
+  let arrayA = [a,b,c,d,e];
+  let arrayB = [a,b,c,d,e];
+  let som = 0;  
+  for(let i = 0; i < arrayA.length; i++){
+    som += arrayA[i] + arrayB[i];
+    return som;
+  } 
+}  
+console.log(sumArr)
+// j'ai pas reussi !
 
 module.exports = sumArr;
