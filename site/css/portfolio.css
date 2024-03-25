@@ -11,9 +11,19 @@
   --textAlign: center;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: purple;
+}
+
 img {
   max-width: 100%;
 }
+
 
 h1 {
   font-size: calc(var(--gutter) * 1.5);
@@ -25,13 +35,20 @@ p {
 
 .menu {
   display: flex;
+  color: purple;
   margin-bottom: var(--gutter);
 }
 
+.fullstack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .desktop {
-  margin: 0;
-  margin-top: calc(var(--gutter) * 5);
-  margin-bottom: calc(var(--gutter) * -0.3125);
+  display: none;
+  
 }
 
 .description {
@@ -52,6 +69,8 @@ p {
 }
 
 .skills {
+  display: flex;
+  flex-direction: column;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
@@ -108,3 +127,22 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+
+@media screen and (min-width: 600px ) {
+
+  .desktop {
+    display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: calc(var(--gutter) * 5);
+  margin-bottom: calc(var(--gutter) * -0.3125);
+    
+  }
+.skills {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+}
+  
