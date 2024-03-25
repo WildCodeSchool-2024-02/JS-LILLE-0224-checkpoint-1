@@ -18,6 +18,7 @@ zone.appendChild(btn);
 let nameToBeReplaced = document.getElementById("firstname");
 let footer = document.querySelector("footer");
 let textPink = document.querySelectorAll(".pink-text");
+let links = document.querySelectorAll("a");
 
 btn.addEventListener("click", function () {
   let colorUser = prompt(`Enter a color`);
@@ -30,5 +31,8 @@ btn.addEventListener("click", function () {
   console.log(textPink);
   for (let i = 0; i < textPink.length; i++) {
     textPink[i].style.color = colorUser;
+  }
+  for (let i = 0; i < links.length; i++) {
+    links[i].style.color = colorUser;
   }
 });
