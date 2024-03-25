@@ -12,7 +12,15 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 */
 
 function getPoints(results) {
-  // Your code here !
+  let score = 0
+  for (let match of results) {
+    if (match[0] > match[2]) {
+      score += 3
+    } else if (match[0] === match[2]) {
+      score += 1
+    } 
+  }
+  return score
 }
 
 module.exports = getPoints;
