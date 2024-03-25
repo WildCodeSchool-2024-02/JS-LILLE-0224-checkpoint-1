@@ -119,6 +119,11 @@ p {
   align-items: center;
 }
 
+.skills-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 @media screen and (min-width: 700px) {
     nav {
       display: flex;
@@ -138,7 +143,7 @@ p {
     .skills-container {
       display: flex;
       justify-content: center;
-      flex-direction: row-reverse;
+      flex-direction: row;
     }
 
     .column {
