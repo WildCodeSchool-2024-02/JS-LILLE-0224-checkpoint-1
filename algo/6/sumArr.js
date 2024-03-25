@@ -10,7 +10,39 @@ sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "1
 */
 
 function sumArr(arrayA, arrayB) {
-  // Your code here !
-}
+  let newArray = []
+  let newNumber
+  let arrayLength 
+  let indicatorA
+  let indicatorB
+  let bigArray
+  if (arrayA.length > arrayB.length) {
+    arrayLength = arrayB.slice()
+    indicatorA = arrayB.length
+    indicatorB = arrayA.length
+    bigArray = arrayA.slice()
+  } else if (arrayB.length > arrayA.length) {
+    arrayLength = arrayA.slice()
+    indicatorA = arrayA.length
+    indicatorB = arrayB.length
+    bigArray = arrayB.slice()
+  } else {
+    arrayLength = arrayA.slice()
+  }
+  for (let i = 0; i < arrayLength.length; i ++) {
+    newNumber = 0
+    newNumber = parseInt(arrayA[i]) + parseInt(arrayB[i]) 
+    newArray.push(newNumber.toString())
+  }  
+  let finalArray 
+  if (arrayB.length === arrayA.length) {
+    finalArray = newArray.slice()
+  } else {
+    let test = bigArray.slice(indicatorA, indicatorB)
+    console.log(test)
+    finalArray = newArray.concat(test)
+  }
+  return finalArray
+}  
 
 module.exports = sumArr;
