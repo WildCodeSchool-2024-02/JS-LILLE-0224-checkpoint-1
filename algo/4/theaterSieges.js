@@ -17,8 +17,17 @@ exemple du résultat final :
 ]
 */
 
-function theaterSieges() {
-  // Your code here !
+function theaterSieges(){
+  let theater = [];
+  for (let i = 1; i <= 26; i++) {
+    let ligne = [];
+    for (let j = 1; j <= 100; j++) {  
+      ligne.push(`${i}-${j}`);      
+    }
+    theater.push(ligne);    
+  }
+  return theater;
 }
+console.log(theaterSieges());
 
 module.exports = theaterSieges;
