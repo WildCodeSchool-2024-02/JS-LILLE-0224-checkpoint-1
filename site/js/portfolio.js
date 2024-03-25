@@ -21,3 +21,19 @@ liens[1].style.color=colorChosen
 )
 
 
+let buttonModif = document.querySelector(".modification")
+let liste1 = document.querySelector("#front-dev-tools")
+
+buttonModif.addEventListener ("click", function() { 
+    liste1.innerHTML="VsCode, GitHub, Terminal"
+})
+
+let formulaire = document.querySelector(".formulaire")
+let ajoutUser = document.querySelector(".devToolsadd")
+let listeBacken = document.querySelector(".listBackend")
+formulaire.addEventListener ('submit', function(event) {
+    event.preventDefault()
+    let nouvelleEntree = document.createElement('li');
+    nouvelleEntree.textContent = ajoutUser.value
+    listeBacken.appendChild(nouvelleEntree)
+ })
