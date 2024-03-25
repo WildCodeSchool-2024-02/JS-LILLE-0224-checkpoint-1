@@ -18,7 +18,9 @@ zone.appendChild(btn);
 let nameToBeReplaced = document.getElementById("firstname");
 
 btn.addEventListener("click", function () {
+  let colorUser = prompt(`Enter a color`);
   let nameUser = prompt(`What's your name ?`);
+  zone.style.backgroundColor = colorUser;
   nameToBeReplaced.innerHTML = nameUser;
   document.getElementById("firstname").style.color = "white";
 });
