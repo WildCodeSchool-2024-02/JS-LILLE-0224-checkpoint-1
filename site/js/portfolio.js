@@ -5,7 +5,7 @@ let Matt = document.querySelector("#firstname")
 let button = document.querySelector(".changeName")
 let section = document.querySelector(".description")
 let root = document.querySelector(':root');
-let liensNavigation = document.querySelector(".menu");
+let liens = document.querySelector("a");
 
 button.addEventListener ("click", function() {
 let username = prompt('Entrez votre nom')
@@ -15,7 +15,8 @@ section.style.backgroundColor=colorChosen
 root.style.setProperty('--lightWildColor', colorChosen)
 Matt.innerText=username
 Matt.style.color="white"
-liensNavigation.style.color=colorChosen
+liens[0].style.color=colorChosen
+liens[1].style.color=colorChosen
 }
 )
 
