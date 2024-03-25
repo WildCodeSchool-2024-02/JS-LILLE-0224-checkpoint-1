@@ -26,7 +26,31 @@ const persons = [
 */
 
 function findAdults(persons) {
-  // Your code here !
+
+  // step 1 : j'ai filtré les adultes, que j'ai stocké dans une nouvelle variable.
+  let adults = persons.filter((person) => person.age >= 18);
+
+  // j'ai crée des tableaux vides pour pouvoir pusher les infos dedans.
+  let arrayToReturn = [];
+  let males = [];
+  let females = [];
+
+
+  // j'ai fais une boucle pour parcourir le tableau d'adultes et les diviser en male / female
+  for (let i = 0; i < adults.length; i++) {
+    if (adults[i].sex === "female") {
+      females.push(adults[i]);
+    } else {
+      males.push(adults[i]);
+    }
+  }
+
+  // ensuite j'ai poussé les 2 sous tableaux à l'interieur d'un seul tableau;
+  arrayToReturn.push(females, males);
+
+  // j'ai renvoyé le résultat.
+  return arrayToReturn
+
 }
 
 module.exports = findAdults;
