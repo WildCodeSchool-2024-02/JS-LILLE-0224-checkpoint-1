@@ -15,7 +15,8 @@ function promptMe(){
     while (newName.length < 2 );
   document.getElementById("firstname").innerHTML = newName;
 document.getElementById("firstname").style.color ="white";
-// document.getElementsById("pink-bg").style.backgroundColor = "purple";
+document.querySelector('.pink-bg').style.backgroundColor = "#750ff7";
+document.querySelectorAll('.pink-text').style.color = "#750ff7";
 }
 promptMe();
 
