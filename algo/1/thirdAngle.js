@@ -1,4 +1,5 @@
-/*
+/* 
+premeir comit
 Écris une fonction qui, étant donné deux angles d'un triangle, renverra la valeur du troisième.
 (Rappel : la somme des valeurs des trois angles dans un triangle est **toujours** 180°)
 Ex: 
