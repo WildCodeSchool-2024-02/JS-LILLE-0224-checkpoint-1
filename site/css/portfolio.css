@@ -108,3 +108,65 @@ p {
 .purple-text {
   color: var(--purple);
 }
+figure {display:flex;
+justify-content: center;
+flex-direction: row ;}
+
+.descriptionImage {padding-top:2em;}
+
+.projects {display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;}
+
+@media screen and (max-width: 700px) {
+
+.sectionDesktop {display:none}
+
+.premiereDescription { margin:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: white;
+  border:none;}
+
+.skills {display:flex;
+flex-direction: column-reverse;}
+.disabled {opacity:0.3}
+
+
+
+}
+@media screen and (min-width: 700px) {
+nav {display: flex;
+  flex-direction: row;
+  justify-content: space-between;}
+
+main {margin:auto;
+padding:0px}
+
+.premiereDescription { margin:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: white;
+  border:none;}
+
+.skills {display:flex;
+flex-direction:row-reverse;
+justify-content: center;
+
+}
+
+.disabled {color:rgb(117, 15, 247, 0.5);
+opacity:0.3}
+
+.projets{display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;}
+}
+
+
