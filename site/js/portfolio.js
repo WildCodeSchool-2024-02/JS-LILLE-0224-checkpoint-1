@@ -1,4 +1,5 @@
 let avatarBanner = document.querySelector(".banner-avatar")
+
 let descriptionName = document.querySelector("#firstname")
 let descriptionBg = document.querySelector(".description")
 let footerBg = document.querySelector("footer.pink-bg")
@@ -6,6 +7,8 @@ let pinkText = document.querySelectorAll(".pink-text")
 let navLink = document.querySelectorAll("header nav a")
 let btnModifyTextColor = document.querySelector(".modifyTextColor")
 
+let frontEndDevToolsList = document.querySelector("#front-dev-tools")
+let btnModifyFrontDevTools = document.querySelector("#modifyFrontDevTools")
 
 avatarBanner.addEventListener("click", () => {
     avatarBanner.src = "image/avatar.svg"
@@ -23,4 +26,8 @@ btnModifyTextColor.addEventListener("click", () => {
     }
     descriptionName.innerHTML = prompt("What's your name ?")
     descriptionName.style.color = "white"
+})
+
+btnModifyFrontDevTools.addEventListener("click", () => {
+    frontEndDevToolsList.innerHTML = `<li>VsCode</li><li>Github</li><li>Terminal</li>`
 })
