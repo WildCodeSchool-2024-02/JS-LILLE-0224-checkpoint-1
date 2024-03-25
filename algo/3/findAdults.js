@@ -25,8 +25,19 @@ const persons = [
 
 */
 
-function findAdults(persons) {
-  // Your code here !
-}
-
+function findAdults(persons, age) {
+  if (age >= 18) {
+    // creer un sous tableau avec hommes ?
+    return function filterGender(gender) {
+      if (gender === 'male') {
+        return persons.filter(persons.sex=== 'male');
+      } else {
+        return persons.filter(persons.sex==='female');
+      }
+  
+  }
+}};
+//persons.filter(age>=18);
 module.exports = findAdults;
+
+
