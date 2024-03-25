@@ -17,12 +17,16 @@
           <li><a href="portfolio.html">Portfolio</a></li>
         </ul>
       </nav>
+      
     </header>
 
     <main>
       <!-- First banner with title, description, avatar and image desktop -->
       <!-- You can use the avatar image on the folder image -->
-      <section>
+      <section class="banniere">
+        <h3>FullStack Developer</h3>
+      <p>I code beautifully simple things. And i love what i do</p>
+      <img src="image/avatar-bis.png" class="avatar">
         <figure class="desktop">
           <img src="image/desktop.svg" alt="desktop" />
         </figure>
@@ -30,17 +34,22 @@
 
       <!-- Second banner with description of your name and your presentation -->
       <article>
-        <section class="description pink-bg">
+        <section class="description pink-bg" id="changeColor">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+        <button id="changeName">Modify text and color</button>
         </section>
+        
       </article>
 
       <!-- Bloc of list of skill front end and back end -->
-        
-      <article class="skills">
         <h2 class="skills--title">My Skills</h2>
-          <section class="column">
+      <article class="skills">
+        
+        
+        
+        <section class="column">
+
               <img src="image/frontend.svg" alt="" />
               <h3>Back-end Developer</h3>
               <p>I like to code things from scratch.</p>
@@ -67,10 +76,13 @@
       </article>
 
       <!-- Third banner with list of all your projects -->
+      
       <article class="projects">
           <h2>My Recent Work</h2>
           <p>Here are a few projects I've worked on recently. Want to see more? Email me.</p>
+          <div id="row">
           <section class="box">
+
             <img src="https://mattfarley.ca/img/logos/kybercore.svg" alt="logo-entreprise" />
             <p>Next level plug and play chassis systems for custom do-it-yourself lightsaber builds.</p>
             <a class="disabled" >In development</a>
@@ -90,6 +102,7 @@
             <p>A space and member management solution for coworking communities both big and small.</p>
             <a class="disabled" >Shutdown in 2017</a>
           </section>
+        </div>
       </article>      
     </main>
     <footer class="description pink-bg">
